@@ -30,7 +30,7 @@ variable "path" {
 
 variable "max_session_duration" {
   description = "The maximum session duration for the IAM role."
-  default     = 3600
+  default     = 28800 # 8 hours
 }
 
 variable "iam_role_assume_role_arn" {
@@ -70,5 +70,7 @@ variable "kms_key_arn" {
 variable "allowed_ip_ranges" {
   description = "A list of IP ranges that are allowed to assume the role."
   type        = list(string)
-  default     = []
+  default = [
+    # Add your IP ranges here
+  ]
 }

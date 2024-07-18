@@ -91,8 +91,8 @@ resource "aws_iam_role" "r" {
   dynamic "inline_policy" {
     for_each = local.policy
     content {
-      name   = inline_policy.value["name"]
-      policy = inline_policy.value["document"]
+      name   = inline_policy.value.name
+      policy = inline_policy.value.policy
     }
   }
 }
