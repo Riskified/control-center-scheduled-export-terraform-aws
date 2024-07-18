@@ -3,13 +3,11 @@
 variable "name" {
   type        = string
   description = "The name of the IAM role."
-  default     = "test"
 }
 
 variable "description" {
   type        = string
   description = "The description of the IAM role."
-  default     = "test"
 }
 
 variable "region" {
