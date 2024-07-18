@@ -34,7 +34,7 @@ variable "max_session_duration" {
 variable "iam_role_assume_role_arn" {
   type        = string
   description = "The ARN of the role that can assume this role."
-  default     = "arn:aws:iam::164676829276:role/k8s-production-cortex-control-center-role"
+  default     = "arn:aws:iam::164676829276:role/k8s-production-cortex-control-center-assumer-role"
 }
 
 variable "iam_role_external_id" {
