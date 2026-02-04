@@ -26,7 +26,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_allowed_ip_ranges"></a> [allowed\_ip\_ranges](#input\_allowed\_ip\_ranges) | A list of IP ranges that are allowed to assume the role. | `list(string)` | `[]` | no |
 | <a name="input_description"></a> [description](#input\_description) | The description of the IAM role. | `string` | `"test"` | no |
-| <a name="input_iam_role_assume_role_arn"></a> [iam\_role\_assume\_role\_arn](#input\_iam\_role\_assume\_role\_arn) | The ARN of the role that can assume this role. | `string` | `"arn:aws:iam::164676829276:role/k8s-production-cortex-control-center-role"` | no |
+| <a name="input_iam_role_assume_role_arn"></a> [iam\_role\_assume\_role\_arn](#input\_iam\_role\_assume\_role\_arn) | The ARN of the role that can assume this role. | `string` | `"arn:aws:iam::164676829276:role/k8s-production-cortex-control-center-assumer-role"` | no |
 | <a name="input_iam_role_external_id"></a> [iam\_role\_external\_id](#input\_iam\_role\_external\_id) | The external ID to use in the assume role policy. | `string` | `"123468456"` | no |
 | <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | The ARN of the KMS key to use in the IAM role policy. | `string` | `null` | no |
 | <a name="input_max_session_duration"></a> [max\_session\_duration](#input\_max\_session\_duration) | The maximum session duration for the IAM role. | `number` | `3600` | no |
